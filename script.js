@@ -11,10 +11,10 @@
 
 const projects = [
   {
-    name: "Luminova Dashboard",
-    description: "Real-time analytics dashboard with interactive charts, dark mode, and team collaboration features.",
+    name: "Blog Gen",
+    description: "An AI-powered platform that automatically generates engaging, high-quality blog posts.",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
-    link: "https://example.com/luminova"
+    link: "https://blog-gen-psi.vercel.app/"
   },
   {
     name: "Zenith E-Commerce",
