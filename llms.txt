@@ -1,0 +1,14 @@
+# Project Showcase
+
+This is the portfolio and project showcase of Monojit. It features a curated collection of web development projects, ranging from sleek web apps to creative experiments.
+
+## Pages
+- Home (https://example.com/): The main portfolio page featuring the projects grid, stats, and contact links.
+
+## Featured Projects
+- Blog Gen: An AI-powered platform that automatically generates engaging, high-quality blog posts.
+- Zenith E-Commerce: A modern storefront with AI-powered recommendations, seamless checkout, and inventory management.
+- Aether Portfolio: Minimal creative portfolio with smooth scroll animations, project galleries, and a contact form.
+
+## Technology Stack
+The site is built with HTML, CSS (Custom Properties, Flexbox, CSS Grid, Animations), and Vanilla JavaScript. It uses a modern Teal and Emerald aesthetic with pill-shaped components and a responsive design.
