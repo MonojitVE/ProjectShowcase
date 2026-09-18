@@ -6,7 +6,7 @@ const projects = [
     description:
       "An AI-powered platform that automatically generates engaging, high-quality blog posts with customizable tone and style.",
     image: "https://iili.io/nJccMcx.png",
-    link: "https://blog-gen-psi.vercel.app/",
+    link: "http://localhost:3000/",
     month: "feb",
     status: "local",
     stack: ["FastAPI", "Groq", "Vanilla JS"],
@@ -21,7 +21,7 @@ const projects = [
     description:
       "A chatbot that leverages multiple RAG sources to provide accurate, context-aware answers.",
     image: "https://i.ibb.co/ZznPLt2Z/Multi-Rag.png",
-    link: "https://multi-rag-chatbot-bvpw.vercel.app/",
+    link: "http://localhost:5173/",
     month: "mar",
     status: "local",
     stack: ["FastAPI", "Groq", "Vector search"],
@@ -66,7 +66,7 @@ const projects = [
     description:
       "An AI-powered agent that generates personalized travel itineraries and engaging travel content.",
     image: "https://i.ibb.co/R4hWnBPV/Travelcontent.png",
-    link: "https://travel-content-agent.vercel.app/",
+    link: "http://localhost:5174/",
     month: "apr",
     status: "local",
     stack: ["FastAPI", "Groq", "Multi-agent"],
@@ -81,7 +81,7 @@ const projects = [
     description:
       "An AI-powered digital asset management system for organizing and optimizing media assets.",
     image: "https://i.ibb.co/YBWst00k/DAM.png",
-    link: "https://github.com/SarthakMukherjee/AI-DAM.git",
+    link: "http://localhost:5175/login",
     month: "may",
     status: "local",
     stack: ["FastAPI", "React", "Groq"],
@@ -642,12 +642,12 @@ class ConstellationMap {
         if (!this.tooltip.classList.contains("show")) return;
         const ttRect = this.tooltip.getBoundingClientRect();
         const canvasRect = this.canvas.getBoundingClientRect();
-        
+
         let adjustedX = tipX;
         let adjustedY = tipY;
         const absoluteX = canvasRect.left + tipX;
         const absoluteY = canvasRect.top + tipY;
-        
+
         // Prevent cutting off on the right
         if (absoluteX + ttRect.width / 2 > window.innerWidth - 20) {
           adjustedX -= (absoluteX + ttRect.width / 2) - (window.innerWidth - 20);
@@ -661,7 +661,7 @@ class ConstellationMap {
         if (absoluteY - ttRect.height < 20) {
           adjustedY += ttRect.height + 40; // Flip it below the node
         }
-        
+
         this.tooltip.style.left = adjustedX + "px";
         this.tooltip.style.top = adjustedY + "px";
       });
