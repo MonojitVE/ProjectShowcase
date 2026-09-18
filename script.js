@@ -126,7 +126,7 @@ const projects = [
     description:
       "A Fintech platform where you can get a comprehensive one-shot view of your financial life.",
     image: "https://i.ibb.co/Df9NFpST/DABAR.png",
-    link: "https://github.com/MonojitVE/DABAR-INTERNATIONAL",
+    link: "https://github.com/MonojitVE/DABAR-INTERNATIONAL.git",
     month: "jul",
     status: "client-live",
     stack: ["FastAPI", "React", "Fintech"],
