@@ -7,7 +7,7 @@ const projects = [
       "An AI-powered platform that automatically generates engaging, high-quality blog posts with customizable tone and style.",
     image: "https://iili.io/nJccMcx.png",
     link: "http://localhost:3000/",
-    month: "feb",
+    month: "mar",
     status: "local",
     stack: ["FastAPI", "Groq", "Vanilla JS"],
     notes: [
@@ -152,24 +152,23 @@ const projects = [
     ],
   },
   {
-    name: "Homework Plus",
+    name: "Web Scrapper",
     description:
-      "An AI-powered homework assistant that helps students learn and solve problems effectively.",
-    image: "https://i.ibb.co/Fq3SsDtv/image-13.png",
-    link: "https://homeworkplus.vercel.app/",
+      "An automated web scraping utility designed to extract, clean, and organize web data efficiently at scale.",
+    image: "scrapper.jpg",
+    link: "https://github.com/MonojitVE/Web-Scrapper",
     month: "aug",
-    status: "live",
-    stack: ["FastAPI", "Groq", "React"],
+    status: "local",
+    stack: ["Python", "FastAPI", "BeautifulSoup"],
     notes: [
-      "Walks through problems step by step",
-      "Adapts explanations to the student's level",
-      "Deployed and in active use",
+      "Automated and headless scraping",
+      "Dynamic data cleaning and organization",
+      "Scalable proxy management",
     ],
   },
 ];
 
 const MONTHS = [
-  { key: "feb", label: "February", short: "Feb", color: "#f472b6" },
   { key: "mar", label: "March", short: "Mar", color: "#a855f7" },
   { key: "apr", label: "April", short: "Apr", color: "#3b9de0" },
   { key: "may", label: "May", short: "May", color: "#14b8a6" },
