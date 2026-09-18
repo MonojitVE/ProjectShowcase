@@ -156,7 +156,7 @@ const projects = [
     description:
       "An automated web scraping utility designed to extract, clean, and organize web data efficiently at scale.",
     image: "scrapper.jpg",
-    link: "https://github.com/MonojitVE/Web-Scrapper",
+    link: "http://127.0.0.1:5180/",
     month: "aug",
     status: "local",
     stack: ["Python", "FastAPI", "BeautifulSoup"],
