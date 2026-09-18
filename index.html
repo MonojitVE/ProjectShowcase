@@ -4,107 +4,201 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project Showcase — My Work</title>
+  <title>Executive Portfolio | Monojit Das</title>
+  <meta name="description" content="AI-Powered Solutions, Full-Stack Development, and Client Digital Transformation Portfolio" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
 
-  <div class="progress">
-    <div class="progress-fill" id="progressFill"></div>
-  </div>
+  <div class="progress"><div class="progress-fill" id="progressFill"></div></div>
   <canvas id="shapegrid-canvas" class="shapegrid-canvas"></canvas>
   <div class="noise"></div>
 
+  <!-- HEADER -->
   <header class="header" id="header">
     <div class="container">
-      <a href="#" class="logo">ProjectShowcase<em>portfolio</em></a>
+      <a href="#" class="logo">Monojit <em class="gradient-text">Das</em></a>
       <nav>
         <ul class="nav-links">
-          <li><a href="#journey">Journey</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="https://github.com/MonojitVE" target="_blank" rel="noopener" class="gh">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-              </svg>
+          <li><a href="#top" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#map">Journey</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li>
+            <a href="https://github.com/MonojitVE" target="_blank" rel="noopener" class="gh">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
               GitHub
-            </a></li>
+            </a>
+          </li>
         </ul>
       </nav>
+      <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open navigation menu">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+      </button>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="hero-content">
-      <div class="badge"><span class="dot"></span>Open for collaborations</div>
-      <h1>Seven months of building<br><span class="roll" id="typing">experiments</span><span class="cursor"></span></h1>
-      <p>A running log of the internship — AI-assisted tools, client platforms, and everything shipped along the way.
-      </p>
-      <div class="stats">
-        <div class="stat">
-          <div class="stat-n" id="count">0</div>
-          <div class="stat-l">Projects</div>
-        </div>
-        <div class="stat">
-          <div class="stat-n">7</div>
-          <div class="stat-l">Months</div>
-        </div>
-        <div class="stat">
-          <div class="stat-n">4</div>
-          <div class="stat-l">Live in prod</div>
-        </div>
-      </div>
-    </div>
-    <div class="scroll-hint" id="scrollHint"><span>Scroll to explore</span>
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-        stroke-linejoin="round">
-        <polyline points="6 9 12 15 18 9" />
-      </svg>
-    </div>
-  </section>
+  <!-- Mobile nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <button type="button" class="mobile-nav-close" id="mobileNavClose" aria-label="Close navigation menu">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+    <a href="#top">Home</a>
+    <a href="#about">About</a>
+    <a href="#map">Journey</a>
+    <a href="projects.html">Projects</a>
+    <a href="https://github.com/MonojitVE" target="_blank" rel="noopener">GitHub</a>
+  </div>
 
-  <section class="journey" id="journey">
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-orb-3"></div>
     <div class="container">
-      <div class="section-lead">
-        <h2>The shape of the internship</h2>
-        <p>Each ridge is a month; its height is how many projects shipped. Hover a peak for the list.</p>
+      <div class="hero-content">
+        <div class="badge"><span class="dot"></span>AI & Full-Stack Developer</div>
+        <h1>Building <span class="roll" id="typing">experiments</span><span class="cursor"></span><br>
+          that solve <span class="gradient-text">real problems</span></h1>
+        <p>Seven months of shipping AI-powered tools, client platforms, and production-grade applications — from concept to deployment.</p>
+        <div class="hero-ctas">
+          <a href="#map" class="btn-primary">
+            Explore the Journey
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+          </a>
+          <a href="https://github.com/MonojitVE" target="_blank" rel="noopener" class="btn-outline">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            GitHub Profile
+          </a>
+        </div>
+        <div class="stats">
+          <div class="stat"><div class="stat-n" id="count">0</div><div class="stat-l">Projects shipped</div></div>
+          <div class="stat"><div class="stat-n">7</div><div class="stat-l">Months building</div></div>
+          <div class="stat"><div class="stat-n" id="liveCount">0</div><div class="stat-l">Live in production</div></div>
+          <div class="stat"><div class="stat-n" id="stackCount">0</div><div class="stat-l">Tech stacks used</div></div>
+        </div>
       </div>
-      <div class="skyline-wrap" id="skylineWrap">
-        <svg class="skyline" id="skylineSvg" viewBox="0 0 1200 340" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient id="ridgeGrad" x1="0" y1="0" x2="1" y2="0"></linearGradient>
-            <linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#3b9de0" stop-opacity="0.16" />
-              <stop offset="100%" stop-color="#3b9de0" stop-opacity="0" />
-            </linearGradient>
-          </defs>
-          <path class="ridge-fill" id="ridgeFill" d=""></path>
-          <path class="ridge-path" id="ridgePath" d=""></path>
-          <g id="peaks"></g>
-        </svg>
-        <div class="peak-tip" id="peakTip"></div>
+    </div>
+    <div class="scroll-hint" id="scrollHint">
+      <span>Scroll to explore</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9" /></svg>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-card glass-card fade-in-section">
+        <div class="about-banner"><div class="about-banner-pattern"></div></div>
+        <div class="about-body">
+          <div class="about-text">
+            <div class="section-badge">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path><circle cx="12" cy="8" r="6"></circle></svg>
+              Executive Summary
+            </div>
+            <h2>From Experiments to Production-Grade AI Solutions</h2>
+            <p>Over seven months, I've transformed ideas into real, deployed products — spanning AI-powered agents, ERP platforms, fintech solutions, and intelligent content tools. Each project pushed the boundaries of what's possible with modern AI and full-stack engineering.</p>
+            <p>My work bridges the gap between proof-of-concept and production: I don't just build demos, I ship solutions that run in real businesses, serving real users.</p>
+          </div>
+          <div class="competencies-card">
+            <h3>Core Competencies</h3>
+            <div class="competency-tags">
+              <span class="competency-tag">FastAPI</span>
+              <span class="competency-tag">React</span>
+              <span class="competency-tag">Groq AI</span>
+              <span class="competency-tag">LangChain</span>
+              <span class="competency-tag">RAG Systems</span>
+              <span class="competency-tag">Multi-Agent AI</span>
+              <span class="competency-tag">Python</span>
+              <span class="competency-tag">JavaScript</span>
+              <span class="competency-tag">PostgreSQL</span>
+              <span class="competency-tag">Docker</span>
+              <span class="competency-tag">Vercel</span>
+              <span class="competency-tag">React Native</span>
+              <span class="competency-tag">ERP Systems</span>
+              <span class="competency-tag">Fintech</span>
+            </div>
+          </div>
+        </div>
+        <div class="track-record">
+          <h3>Track Record Highlights</h3>
+          <div class="track-grid">
+            <div class="track-item">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
+              <span>Built and shipped 11 projects across AI, fintech, and enterprise domains in 7 months.</span>
+            </div>
+            <div class="track-item">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
+              <span>Delivered a client-live fintech platform (DABAR International) for the Tanzania/Africa market.</span>
+            </div>
+            <div class="track-item">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
+              <span>Engineered multi-agent AI systems including procurement, pre-sales, and travel content agents.</span>
+            </div>
+            <div class="track-item">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
+              <span>Built a complete ERP solution (Sentry Fab) for end-to-end fabrication business workflows.</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <div class="divider"><span>Everything shipped</span></div>
+  <!-- CONSTELLATION MAP -->
+  <section class="constellation-section" id="map">
+    <div class="container">
+      <div class="section-header fade-in-section">
+        <div class="section-badge teal">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="4" rx="2"></rect><rect width="6" height="6" x="9" y="9" rx="1"></rect><path d="M15 2v2"></path><path d="M15 20v2"></path><path d="M2 15h2"></path><path d="M2 9h2"></path><path d="M20 15h2"></path><path d="M20 9h2"></path><path d="M9 2v2"></path><path d="M9 20v2"></path></svg>
+          7-Month Journey
+        </div>
+        <h2>Interactive Project Constellation</h2>
+        <p>Hover over nodes to explore projects scattered across 7 months. Click any project to visit it.</p>
+      </div>
+      <div class="map-container glass-card">
+        <canvas class="map-canvas" id="constellationCanvas"></canvas>
+        <div class="map-tooltip" id="mapTooltip"></div>
+      </div>
+      <div class="map-legend" id="mapLegend"></div>
 
-  <section class="projects" id="projects">
-    <div id="projects-list"></div>
+      <div class="view-projects-cta fade-in-section">
+        <a href="projects.html" class="btn-primary" style="font-size: 1rem; padding: 1rem 2.2rem;">
+          View All Projects
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-card glass-card fade-in-section">
+        <h2>Interested in working together?</h2>
+        <p>Whether you need an AI-powered solution, a full-stack application, or want to explore what's possible — let's connect and build something great.</p>
+        <div class="cta-buttons">
+          <a href="https://github.com/MonojitVE" target="_blank" rel="noopener" class="btn-primary">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            View GitHub Profile
+          </a>
+          <a href="#top" class="btn-outline">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg>
+            Back to Top
+          </a>
+        </div>
+      </div>
+    </div>
   </section>
 
   <footer class="footer">
     <div class="container">
-      <p>Built with care by <a href="#">Monojit</a> — <span id="year"></span></p>
+      <p>Built with care by <a href="https://github.com/MonojitVE" target="_blank" rel="noopener">Monojit Das</a> — <span id="year"></span></p>
     </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
-
 </html>
